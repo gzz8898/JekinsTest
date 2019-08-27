@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <declare-styleable name="LevelTextView">
+        <attr name="ltv_title_colors" format="reference"/>
+        <attr name="ltv_corner" format="dimension"/>
+        <attr name="ltv_strokeWidth" format="dimension"/>
+        <attr name="ltv_strokeColors" format="reference"/>
+        <attr name="ltv_backGround_colors" format="reference"/>
+        <attr name="ltv_titles" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CustomerRatingView">
+        <attr name="rating_icon" format="reference"/>
+        <attr name="default_icon" format="reference"/>
+        <attr name="inner_space" format="dimension"/>
+        <attr name="default_rating_num" format="reference|integer"/>
+        <attr name="min_rating_num" format="reference|integer"/>
+        <attr name="max_rating_num" format="reference|integer"/>
+        <attr name="enable_rating" format="boolean"/>
+    </declare-styleable>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

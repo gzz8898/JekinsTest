@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="tvColors">
+        <item>"#ff0000"</item>
+        <item>"#00ff00"</item>
+        <item>"#0000ff"</item>
+    </string-array>
+    <string-array name="bgColors">
+        <item>"#ffffff"</item>
+        <item>"#ffffff"</item>
+        <item>"#ffffff"</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

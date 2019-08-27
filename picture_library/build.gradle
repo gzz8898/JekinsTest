@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode cfgs.versionCode
+        versionName cfgs.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':ucrop')
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:${cfgs.androidSupportVersion}"
+    //noinspection GradleCompatible
+    implementation "com.android.support:recyclerview-v7:${cfgs.androidSupportVersion}"
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+   implementation "io.reactivex.rxjava2:rxjava:${cfgs.rxjava}"
+   implementation "io.reactivex.rxjava2:rxandroid:${cfgs.rxandroid}"
+    implementation 'com.zhy.base:fileprovider:1.0.0'
+    implementation 'com.github.qingmei2:rximagepicker:0.2.0'
+    implementation 'com.github.qingmei2:rximagepicker_support:0.2.0'
+    implementation 'com.github.qingmei2:rximagepicker_support_zhihu:0.2.0'
+    implementation 'com.github.qingmei2:rximagepicker_support_wechat:0.2.0'
+}
